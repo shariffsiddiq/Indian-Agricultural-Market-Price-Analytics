@@ -21,7 +21,39 @@ The analysis covers a snapshot containing **6,141 records**, **18 states**, **13
 
 Files: [Phase-1 Excel](Phase-1%20Excel/)
 
-The Excel phase preserves both the raw source extract and the cleaned workbook used by the Python, SQL, and Power BI phases. Excel screenshots will be added here once the workbook preview images are available.
+The Excel phase preserves both the raw source extract and the cleaned workbook used by the Python, SQL, and Power BI phases.
+
+#### Excel Visual Analysis
+
+##### 1. Raw Data
+
+![Excel raw data sheet](assets/excel-raw-data.png)
+
+This sheet contains the original market-price records with state, district, market, commodity, variety, grade, arrival date, and price fields. It provides the starting point for the cleaning and validation workflow.
+
+##### 2. Cleaned Data
+
+![Excel cleaned data sheet](assets/excel-cleaned-data.png)
+
+The cleaned sheet contains standardized records prepared for analysis, including consistent dates and minimum, maximum, and modal price values. This table is the shared input for the Python, SQL, and Power BI phases.
+
+##### 3. Data Quality
+
+![Excel data quality sheet](assets/excel-data-quality.png)
+
+The data-quality summary reports 6,141 records, 0 missing values, 0 duplicate records, and 0 invalid price relationships. It also documents coverage across 18 states, 131 districts, 302 markets, and 132 commodities.
+
+##### 4. Pivot Analysis
+
+![Excel pivot analysis sheet](assets/excel-pivot-analysis.png)
+
+These pivot tables summarize state market coverage, commodity availability, average modal price by state, commodity price ranges, and market price ranges. They convert the detailed dataset into comparable decision-focused summaries.
+
+##### 5. Insights
+
+![Excel insights sheet](assets/excel-insights.png)
+
+The insights sheet presents charts for state record counts, commodity modal prices, market price ranges, and commodity availability. It turns the pivot results into visual findings that can be communicated in the final portfolio analysis.
 
 ### Phase 2: Python - Exploratory Data Analysis
 
