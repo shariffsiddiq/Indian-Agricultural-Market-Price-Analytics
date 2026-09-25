@@ -185,7 +185,7 @@ assets/              README screenshots and workflow graphic
 - Add multiple arrival dates to support time-series analysis.
 - Standardize price units before comparing commodities directly.
 - Add a data dictionary and automated validation checks.
-- Extend the Power BI report with slicers for state, market, commodity, and date.
+- Extend the Power BI report with time-based trend visuals when additional arrival dates become available.
 
 ## Portfolio Note
 
