@@ -33,6 +33,32 @@ The Python workflow validates the data, calculates descriptive statistics, and a
 
 Files: [Python EDA script](Phase-2%20Python/Python(EDA).py)
 
+#### Python Visual Analysis
+
+##### Top states by record count
+
+![Top 10 states by number of records](assets/top-states-by-records.png)
+
+Tamil Nadu contributes the largest share of records in this snapshot, with 5,495 records.
+
+##### Top commodities by average modal price
+
+![Top 10 commodities by average modal price](assets/top-commodities-by-modal-price.png)
+
+Among commodities with at least five records, Jasmine has the highest average modal price, followed by Kakada.
+
+##### Modal price distribution
+
+![Distribution of modal prices](assets/modal-price-distribution.png)
+
+The modal prices range from ₹0.02 to ₹130,000. Low and high values are flagged for review rather than being removed automatically.
+
+##### Markets by average price range
+
+![Top markets by average price range](assets/top-markets-by-price-range.png)
+
+Palani (Uzhavar Sandhai) has the largest average price range among the markets analyzed.
+
 ### Phase 3: SQL - Structured Analysis
 
 The SQL scripts set up the database and provide reusable analysis queries for data quality, states, commodities, markets, and window-function exercises.
@@ -45,31 +71,19 @@ The cleaned CSV and Power BI report file provide the foundation for interactive 
 
 Files: [Phase-4 Power BI](Phase-4%20Power%20BI/)
 
-## Visual Analysis
+## Power BI Dashboard Screenshots
 
-### Top states by record count
+### Agricultural Market Overview
 
-![Top 10 states by number of records](assets/top-states-by-records.png)
+![Agricultural Market Overview Power BI dashboard](assets/power-bi-agricultural-market-overview.png)
 
-Tamil Nadu contributes the largest share of records in this snapshot, with 5,495 records.
+This overview page presents the main KPIs: total records, states, commodities, markets, and average modal price. It also includes interactive filters for state, commodity, and market, with visuals for the top states, top commodities, and top markets by average modal price.
 
-### Top commodities by average modal price
+### Price Analysis & Insights
 
-![Top 10 commodities by average modal price](assets/top-commodities-by-modal-price.png)
+![Price Analysis and Insights Power BI dashboard](assets/power-bi-price-analysis-insights.png)
 
-Among commodities with at least five records, Jasmine has the highest average modal price, followed by Kakada.
-
-### Modal price distribution
-
-![Distribution of modal prices](assets/modal-price-distribution.png)
-
-The modal prices range from ₹0.02 to ₹130,000. Low and high values are flagged for review rather than removed automatically.
-
-### Markets by average price range
-
-![Top markets by average price range](assets/top-markets-by-price-range.png)
-
-Palani (Uzhavar Sandhai) has the largest average price range among the markets analyzed.
+This analysis page compares average minimum, modal, and maximum prices by commodity, shows the distribution of records by price range, ranks markets by average modal price, and provides a detailed commodity price table.
 
 ## Key Findings
 
@@ -99,7 +113,7 @@ assets/              README screenshots and workflow graphic
 1. Install Python with `pandas`, `matplotlib`, and `openpyxl`.
 2. Open `Phase-2 Python/Python(EDA).py`.
 3. Run the script from the project root.
-4. Review the console summary and charts in `assets/`.
+4. Review the console summary and exported charts in `assets/`.
 
 ## Limitations and Next Steps
 
