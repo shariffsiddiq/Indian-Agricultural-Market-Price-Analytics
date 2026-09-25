@@ -96,9 +96,39 @@ Palani (Uzhavar Sandhai) has the largest average price range among the markets a
 
 ### Phase 3: SQL - Structured Analysis
 
-The SQL scripts set up the database and provide reusable analysis queries for data quality, states, commodities, markets, and window-function exercises.
+The SQL phase converts the cleaned dataset into structured, reusable queries for validation, descriptive analysis, and ranking.
 
 Files: [Phase-3 SQL analysis](Phase-3%20Sql_Analysis/)
+
+#### SQL Analysis Workflow
+
+##### 1. Database Setup
+
+[DATABASE SETUP.sql](Phase-3%20Sql_Analysis/DATABASE%20SETUP.sql) selects the project database used by the analysis queries. This establishes the common table context for the remaining SQL files.
+
+##### 2. Data Validation
+
+[DATA VALIDATION.sql](Phase-3%20Sql_Analysis/DATA%20VALIDATION.sql) checks total records, arrival-date coverage, and distinct counts for states, markets, and commodities. These checks confirm the basic shape of the dataset before deeper analysis.
+
+##### 3. Data Quality Analysis
+
+[Data-quality analysis.sql](Phase-3%20Sql_Analysis/Data-quality%20analysis.sql) checks price relationships and flags unusually low or high modal prices. The validation preserves unusual values for review instead of removing them automatically.
+
+##### 4. State-Level Analysis
+
+[State-level analysis.sql](Phase-3%20Sql_Analysis/State-level%20analysis.sql) compares record counts, average modal prices, and market coverage across states. This identifies differences in geographic representation and price levels.
+
+##### 5. Commodity Analysis
+
+[Commodity analysis.sql](Phase-3%20Sql_Analysis/Commodity%20analysis.sql) ranks commodities by average modal price, market availability, and modal-price spread. A minimum record threshold is used for more reliable commodity comparisons.
+
+##### 6. Market Analysis
+
+[Market analysis.sql](Phase-3%20Sql_Analysis/Market%20analysis.sql) identifies markets with the largest average price ranges and compares their record counts and average modal prices. This highlights markets with greater price variation.
+
+##### 7. Window Function Analysis
+
+[SQL Window Function.sql](Phase-3%20Sql_Analysis/SQL%20Window%20Function.sql) uses a common table expression and `DENSE_RANK()` to rank commodities by average modal price. This demonstrates advanced SQL analysis beyond basic grouping and aggregation.
 
 ### Phase 4: Power BI - Reporting Dataset
 
