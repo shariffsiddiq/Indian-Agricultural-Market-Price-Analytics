@@ -14,11 +14,14 @@ The analysis covers a snapshot containing **6,141 records**, **18 states**, **13
 
 ### Phase 1: Excel - Data Preparation
 
+- **Data source:** Government of India agricultural market data, obtained through the official `data.gov.in` open-data portal.
 - Raw and cleaned CSV files
 - Cleaned Excel workbook with the `Cleaned_Data` sheet
 - Preparation of price fields, dates, and analysis-ready columns
 
 Files: [Phase-1 Excel](Phase-1%20Excel/)
+
+The Excel phase preserves both the raw source extract and the cleaned workbook used by the Python, SQL, and Power BI phases. Excel screenshots will be added here once the workbook preview images are available.
 
 ### Phase 2: Python - Exploratory Data Analysis
 
