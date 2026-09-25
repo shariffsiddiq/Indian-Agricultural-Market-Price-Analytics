@@ -8,6 +8,8 @@ An end-to-end data analytics portfolio project exploring agricultural market pri
 
 This project moves from raw market data to an analysis-ready dataset, analytical SQL queries, Python exploratory data analysis, and a Power BI report-ready model.
 
+The dataset was sourced from the Government of India agricultural market data available through the official [data.gov.in](https://data.gov.in/) open-data portal.
+
 The analysis covers a snapshot containing **6,141 records**, **18 states**, **131 districts**, **302 markets**, and **132 commodities**. The available data represents one arrival date, so this project focuses on cross-sectional comparisons rather than historical price trends.
 
 ## Four-Phase Workflow
