@@ -1,0 +1,12 @@
+USE indian_agricultural_market_prices_cleaned;
+-- 5.Market analysis
+-- Top markets by average price range
+-- SELECT
+--     Market,
+--     COUNT(*) AS record_count,
+--     ROUND(AVG(Price_Range), 2) AS avg_price_range,
+--     ROUND(AVG(Modal_Price), 2) AS avg_modal_price
+-- FROM indian_agricultural_market_prices_cleaned
+-- GROUP BY Market
+-- ORDER BY avg_price_range DESC
+-- LIMIT 10;

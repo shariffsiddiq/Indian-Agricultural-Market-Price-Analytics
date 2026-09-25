@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Four phase analytics workflow">
+  <rect width="1200" height="220" fill="#102a43"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="42" fill="#f0f4f8" font-size="24" font-weight="700">Indian Agricultural Market Price Analytics</text>
+    <g font-size="18" font-weight="700">
+      <rect x="55" y="85" width="220" height="75" rx="8" fill="#f6bd60"/><text x="165" y="130" fill="#102a43">1. Excel</text>
+      <rect x="335" y="85" width="220" height="75" rx="8" fill="#84a59d"/><text x="445" y="130" fill="#102a43">2. Python EDA</text>
+      <rect x="615" y="85" width="220" height="75" rx="8" fill="#f28482"/><text x="725" y="130" fill="#102a43">3. SQL</text>
+      <rect x="895" y="85" width="220" height="75" rx="8" fill="#90be6d"/><text x="1005" y="130" fill="#102a43">4. Power BI</text>
+    </g>
+    <g fill="#f0f4f8" font-size="28"><text x="305" y="132">→</text><text x="585" y="132">→</text><text x="865" y="132">→</text></g>
+    <text x="600" y="195" fill="#bcccdc" font-size="15">Prepare • Explore • Validate • Communicate</text>
+  </g>
+</svg>

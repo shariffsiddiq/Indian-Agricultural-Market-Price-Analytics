@@ -1,0 +1,21 @@
+USE indian_agricultural_market_prices_cleaned;
+-- 7.SQL Window Function
+-- Rank commodities by average modal price
+-- WITH commodity_prices AS (
+--     SELECT
+--         Commodity,
+--         COUNT(*) AS record_count,
+--         AVG(Modal_Price) AS avg_modal_price
+--     FROM indian_agricultural_market_prices_cleaned
+--     GROUP BY Commodity
+--     HAVING COUNT(*) >= 5
+-- )
+-- SELECT
+--     Commodity,
+--     record_count,
+--     ROUND(avg_modal_price, 2) AS avg_modal_price,
+--     DENSE_RANK() OVER (
+--         ORDER BY avg_modal_price DESC
+--     ) AS price_rank
+-- FROM commodity_prices
+-- ORDER BY price_rank;
